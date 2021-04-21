@@ -42,6 +42,7 @@ unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
     - http://localhost:4200/photos
     - http://localhost:4200/followers
     - http://localhost:4200/likes
+3) we can access to Data in the ES Database using the created index (facebook_service): http://localhost:9200/facebook_service/_search/?pretty
 ```
 # Start up (Docker):
 ```
@@ -56,5 +57,6 @@ unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
     - http://localhost:4200/photos
     - http://localhost:4200/followers
     - http://localhost:4200/likes
+7) we can access to Data in the ES Database using the created index (facebook_service): http://localhost:9200/facebook_service/_search/?pretty
     
 ```
