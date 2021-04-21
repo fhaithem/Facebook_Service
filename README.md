@@ -48,4 +48,6 @@ unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 1) prepare the ubunto environment with Docker installed
 2) launch : sudo docker-compose up --build -d
 3) check containers up: sudo docker ps ( if there is a problem check Exited containers with: sudo docker ps -a)
+4) The unicron server will be launched automatically with the APIs of FastAPI
+5) The ES database will be launched automatically
 ```
