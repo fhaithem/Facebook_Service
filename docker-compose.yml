@@ -1,0 +1,44 @@
+version: '3'
+services:
+    Elasticsearch:
+      container_name: elasticsearch
+      image: docker.elastic.co/elasticsearch/elasticsearch:7.12.0
+      environment:
+        - node.name=elasticsearch
+        - cluster.name=es-docker-cluster
+        - discovery.type=single-node
+        - bootstrap.memory_lock=true
+        - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      ulimits:
+        memlock:
+          soft: -1
+          hard: -1
+      volumes:
+        - es-data:/usr/share/elasticsearch/data
+      ports:
+        - 9200:9200
+      expose:
+        - "9200"
+      networks:
+        - elastic
+        
+    facebook_service:
+      container_name: facebook_service
+      build: .
+      #volumes:
+        #- ./Facebook_Service:/Facebook_Service
+      tty: true
+      depends_on:
+        - Elasticsearch
+      ports:
+        - 4200:4200
+      expose:
+        - "4200"
+
+volumes:
+  es-data:
+    driver: local
+
+networks:
+  elastic:
+    driver: bridge

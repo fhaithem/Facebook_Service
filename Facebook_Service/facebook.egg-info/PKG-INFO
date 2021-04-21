@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: facebook
+Version: 1.0.0
+Summary: Facebook scrapping service using fastAPI
+Home-page: UNKNOWN
+Author: Haithem FRAD
+Author-email: fhaithe
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
