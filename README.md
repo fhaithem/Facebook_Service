@@ -36,7 +36,7 @@ unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 # Start up (windows):
 ```
 1) launch the uvicorn server (http://localhost:4200/): python app.py
-2) launch APIs with FastAPI
+2) launch APIs with FastAPI:
     - http://localhost:4200/user_info
     - http://localhost:4200/events
     - http://localhost:4200/photos
@@ -47,5 +47,5 @@ unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 ```
 1) prepare the ubunto environment with Docker installed
 2) launch : sudo docker-compose up --build -d
-3) check containers up: sudo docker ps ( if there is a problem cherche containers Exited with: sudo docker ps -a)
+3) check containers up: sudo docker ps ( if there is a problem check Exited containers with: sudo docker ps -a)
 ```
