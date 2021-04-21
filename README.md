@@ -50,4 +50,11 @@ unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 3) check containers up: sudo docker ps ( if there is a problem check Exited containers with: sudo docker ps -a)
 4) The unicron server will be launched automatically with the APIs of FastAPI
 5) The ES database will be launched automatically
+6) launch APIs with FastAPI using your browsers :
+    - http://localhost:4200/user_info
+    - http://localhost:4200/events
+    - http://localhost:4200/photos
+    - http://localhost:4200/followers
+    - http://localhost:4200/likes
+    
 ```
