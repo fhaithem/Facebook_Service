@@ -32,7 +32,20 @@ apt-get install -y unzip
 wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip
 unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 ```
+
+# Start up (windows):
 ```
-Install from the server
-pip install --user --index-url http://kaisens:Kaizendata.2017@46.105.104.225:8880/simple/ --trusted-host 46.105.104.225 Insta_driver
+1) launch the uvicorn server (http://localhost:4200/): python app.py
+2) launch APIs with FastAPI
+    - http://localhost:4200/user_info
+    - http://localhost:4200/events
+    - http://localhost:4200/photos
+    - http://localhost:4200/followers
+    - http://localhost:4200/likes
+```
+# Start up (Docker):
+```
+1) prepare the ubunto environment with Docker installed
+2) launch : sudo docker-compose up --build -d
+3) check containers up: sudo docker ps ( if there is a problem cherche containers Exited with: sudo docker ps -a)
 ```
